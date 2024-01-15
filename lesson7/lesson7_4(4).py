@@ -2,7 +2,7 @@ from tools import connect,reconnect
 from machine import ADC,Pin,Timer,RTC
 import time
 import urequests
-#https://hook.us1.make.com/p9omw37xf7bt1461ca7q278pyqr5mgcv?date=2024-01-15-14:25:00&temperature=25.456&from=%E5%AD%B8%E9%99%A2%E9%A4%8A%E9%9B%9E%E5%A0%B4
+#https://hook.us1.make.com/6vq7cdbbcoponennayu4sj45zb1oty6v?date=2024-01-15-14:25:00&temperature=25.456&from=%E5%AD%B8%E9%99%A2%E9%A4%8A%E9%9B%9E%E5%A0%B4
 
 connect()
 adc = ADC(4)     # create ADC object on ADC pin,最後一個,溫度
@@ -19,7 +19,7 @@ def alert(temp):
         rtc = RTC()
         date_tuple = rtc.datetime()
         date_str = f'{date_tuple[0]}-{date_tuple[1]}-{date_tuple[2]} {date_tuple[4]}:{date_tuple[5]}:{date_tuple[6]}'
-        url_str = f'https://hook.us1.make.com/p9omw37xf7bt1461ca7q278pyqr5mgcv?date={date_str}&temperature={temp}&from=學院養魚場'
+        url_str = f'https://hook.us1.make.com/6vq7cdbbcoponennayu4sj45zb1oty6v?date={date_str}&temperature={temp}&from=學院養魚場'
         try:
             response = urequests.get(url_str)            
         except:
