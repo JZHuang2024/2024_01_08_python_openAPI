@@ -1,3 +1,38 @@
+#2024.01.22.Monday.In-class.Writthen by 徐國堂
+#底下的式碼是必須在Thonny上執行的
+#       使用Thonny Python IDE編寫MicroPython程式
+#       Thonny（thonny.org）是專門為Python初學者打造的IDE（整合開發環境），
+#       有Windows, Mac和Linux版本，也是樹莓派作業系統（Raspberry Pi OS）內建的Python程式開發工具
+#
+#
+#
+#⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇this one run under Thonny⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
+#how to find the manual :
+#       MicroPython documentation /Quick reference for the RP2 / Pins and GPIO
+#       https://docs.micropython.org/en/latest/rp2/quickref.html#pins-and-gpio
+#⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆
+
+#from machine import Pin
+#
+#red_led = Pin(15,mode=Pin.OUT)
+#red_led.value(1)
+#red_led.value(0)
+
+
+
+
+#from machine import Pin
+#import time
+
+#red_led = Pin(15,mode=Pin.OUT)
+#btn = Pin(14,mode=Pin.PULL_DOWN)
+
+#while True:
+#    if btn.value():
+#        red_led.value(1)
+#    else:
+#        red_led.value(0)
+
 from machine import Pin
 import time
 
