@@ -1,3 +1,4 @@
+##⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇this one run under Thonny⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
 #底下的式碼是必須在Thonny上執行樹莓派
 #       使用Thonny Python IDE編寫MicroPython程式
 #       Thonny（thonny.org）是專門為Python初學者打造的IDE（整合開發環境），
@@ -5,23 +6,25 @@
 #           Raspberry Pi Pico W是一款樹莓派官方設計美觀但靈活的RP2040開發平台，其是Raspberry Pi Pico的無線升級版，
 #           具有Pico所有功能外還有2.4GHz無線介面。
 #
-#
-#⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇this one run under Thonny⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
 #how to find the manual :
 #       MicroPython documentation /Quick reference for the RP2 / Pins and GPIO
 #       https://docs.micropython.org/en/latest/rp2/quickref.html#pins-and-gpio
-#⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆
+#⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆
 
 
 
 
 #修改2024.01.24.Wed.In-class.Writthen by 徐國堂 (AM10:52)
 #程式寫完丟到Thonny,樹莓派必須連上電腦
+
+
 ################################################光敏電阻################################################
 #老師線上筆記
 #https://github.com/roberthsu2003/pico_W/tree/main/%E4%B8%80%E8%88%AC%E6%93%8D%E4%BD%9C/2_6%E5%85%89%E6%95%8F%E9%9B%BB%E9%98%BB
 #官方線上筆記
 #https://docs.micropython.org/en/latest/rp2/quickref.html#adc-analog-to-digital-conversion
+#########################################################################################################
+
 
 
 from machine import Pin, ADC
@@ -87,3 +90,11 @@ while True:
         
             red_led.value(0)
 
+
+
+#Thonny上執行樹莓派 / 樹莓派上按下按鈕 / 成功會出現
+#    MPY: soft reboot
+#    release
+#    2024-1-24 12:42:9
+#    28.91698
+#    44698
