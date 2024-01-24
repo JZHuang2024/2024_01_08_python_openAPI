@@ -68,7 +68,7 @@ while True:
                 print(getTemperature())
                 print(getLightValue())
                 is_press = False
-                '''     #'''點三點區間變文字不執行
+                '''
                 url_str = 'https://openapi-test-ukni.onrender.com/pico_w/2024-01-22 16:02:10?address=chicken_KFC&celsius=15.386'
                 try:
                     response = urequests.get(url_str)
@@ -82,7 +82,7 @@ while True:
                     else:
                         print("傳送失敗(server出現錯誤)")
                     response.close()
-                '''     #'''點三點區間變文字不執行
+                '''
             
         
             red_led.value(0)
