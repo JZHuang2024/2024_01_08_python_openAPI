@@ -1,4 +1,4 @@
-2024_01_24_AM11:59
+#2024_01_24_AM11:59
 
 #▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
 #此main.py必須在虛擬主機執行.指令:uvicorn main:app --reload
@@ -70,7 +70,7 @@ async def read_item(date:str ,address:str,celsius:float=0.0):
 #    在下方輸入address     chicken_KFC
 #             celsius     26.6789
 #             light       45987
-#  或直接輸入 http://127.0.0.1:8000/pico_w/2024-01-24 11:36?2024-01-24 11:36?address=chicken_KFC&celsius=26.6789&light=45987
+#  或直接輸入 http://127.0.0.1:8000/pico_w/2024-01-24 11:36?address=chicken_KFC&celsius=26.6789&light=45987
 #                                                                           
 #  按下 SEND 若成功出現下方
 #            

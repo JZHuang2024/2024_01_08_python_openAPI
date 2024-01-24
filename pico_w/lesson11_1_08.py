@@ -1,3 +1,7 @@
+#2024.01.24_WED_AM11:59
+#上一個步驟接 C:\Users\user\Documents\GitHub\2024_01_08_python_openAPI\main.py
+
+
 #底下的式碼是必須在Thonny上執行樹莓派
 #       使用Thonny Python IDE編寫MicroPython程式
 #       Thonny（thonny.org）是專門為Python初學者打造的IDE（整合開發環境），
@@ -15,7 +19,7 @@
 
 
 
-#修改2024.01.24.Wed.In-class.Writthen by 徐國堂 (AM10:52)
+
 #程式寫完丟到Thonny,樹莓派必須連上電腦
 ################################################光敏電阻################################################
 #老師線上筆記
