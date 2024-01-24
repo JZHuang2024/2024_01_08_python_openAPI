@@ -1,5 +1,5 @@
 #2024.01.24_WED_AM11:59
-#上一個步驟接 C:\Users\user\Documents\GitHub\2024_01_08_python_openAPI\main.py
+#上一個步驟接 C:\Users\user\Documents\GitHub\2024_01_08_python_openAPI\main2.py
 
 
 #底下的式碼是必須在Thonny上執行樹莓派
@@ -92,3 +92,24 @@ while True:
         
             red_led.value(0)
 
+
+
+#下一個步驟接 在Thonny執行這個檔案11_1_08.py
+#成功在Thonny下面出現
+#        MPY: soft reboot
+#        連線成功
+#        ip=172.20.10.3
+#        release
+#        傳送訊息成功
+#
+#下一個步驟進入render server / 先前建立德 Web Service -->_openAPI_test_ /Logs成功y下面出現
+#            https://dashboard.render.com/
+#           
+#            日期:2024-1-24 13:26:7
+#            位置:chicken_KFC
+#            攝氏:28.91698
+#            光線:16211.0
+#            INFO:     223.136.175.57:0 - "GET /pico_w/2024-1-24%2013%3A26%3A7?address=chicken_KFC&celsius=28.91698&light=16211 HTTP/1.1" 200 OK
+#           
+#
+#           

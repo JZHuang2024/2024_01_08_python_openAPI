@@ -85,6 +85,7 @@ async def read_item(date:str ,address:str,celsius:float=0.0):
 #        光線:45987.0
 #        INFO:     127.0.0.1:3986 - "GET /pico_w/2024-01-24%2011%3A36?address=chicken_KFC&celsius=26.6789&light=45987 HTTP/1.1" 200 OK
 #
+#5. 下個步驟 修改C:\Users\user\Documents\GitHub\2024_01_08_python_openAPI\pico_w\lesson11_1_08.py
 #
 #
 #
