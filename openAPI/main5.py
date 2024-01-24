@@ -68,6 +68,7 @@ async def read_item(date:str ,address:str,celsius:float=0.0):
     print(f"攝氏:{celsius}")
     return {"狀態":"儲存成功"}
 
+'''
 #▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼2023.01.24.wed.PM03:55多一個節點▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
 @app.get("/pico_w/")
 async def read_item(count:int=1):
@@ -85,6 +86,35 @@ async def read_item(count:int=1):
             'light':light_get
             }
 #▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲2023.01.24.wed.PM03:55多一個節點▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+'''
+
+
+#▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼2023.01.24.wed.PM04:22一次可以傳5筆資料▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+class Pico_w(BaseModel):
+    date:str
+    address:str
+    temperature:float
+    light:float
+
+@app.get("/pico_w/")
+async def read_item(count:int=1):
+    date_list = redis_conn.lrange('pico_w:date',-count,-1)
+    dates = [date.decode() for date in date_list]
+    all_Data:[Pico_w] = []
+    for date in dates:
+        address_get = redis_conn.hget('pico_w:address',date).decode()
+        temperature_get = redis_conn.hget('pico_w:temperature',date).decode()
+        light_get = redis_conn.hget('pico_w:light',date).decode()
+        item = Pico_w(date=date,address=address_get,temperature=float(temperature_get),light=float(light_get))
+        all_Data.append(item)
+
+#▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲2023.01.24.wed.PM04:22一次可以傳5筆資料▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+
+
+
+
+
+
 
 
 
