@@ -106,10 +106,11 @@ while True:
 #            
 #            按下樹莓派按鍵
 #        
-#            等20~30sec傳render server
-#            等
-#            
 #            release
+#            
+#            等20~30sec傳render server
+#                    
+#           
 #            傳送訊息成功
 #
 #下一個步驟進入render server / 先前建立德 Web Service -->_openAPI_test_ /Logs成功y下面出現
