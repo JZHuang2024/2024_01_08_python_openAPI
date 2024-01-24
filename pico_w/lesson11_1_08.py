@@ -96,11 +96,19 @@ while True:
 
 #下一個步驟接 在Thonny執行這個檔案11_1_08.py
 #成功在Thonny下面出現
-#        MPY: soft reboot
-#        連線成功
-#        ip=172.20.10.3
-#        release
-#        傳送訊息成功
+#MPY: soft reboot
+#            等待連線
+#            等待連線
+#            等待連線
+#            等待連線
+#            連線成功
+#            ip=172.16.12.101
+#            等
+#            等20~30sec傳render server
+#            等
+#            等
+#            release
+#            傳送訊息成功
 #
 #下一個步驟進入render server / 先前建立德 Web Service -->_openAPI_test_ /Logs成功y下面出現
 #            https://dashboard.render.com/
