@@ -44,7 +44,7 @@ while True:
                 print(currentTime)
                 is_press = False
                 '''
-                url_str = 'https://自已的網址/pico_w/2024-01-22 16:02:10?address=chicken_KFC&celsius=15.386'
+                url_str = 'https://openapi-test-ukni.onrender.com/pico_w/2024-01-22 16:02:10?address=chicken_KFC&celsius=15.386'
                 try:
                     response = urequests.get(url_str)
                     pass
