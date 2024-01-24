@@ -26,6 +26,12 @@ btn = Pin(14,mode=Pin.PULL_DOWN)
 is_press = False
 #connect()
 
+def getCurrentTime():
+    times_tuple = time.localtime()
+    currentTime = f'{times_tuple[0]}-{times_tuple[1]}-{times_tuple[2]} {times_tuple[3]}:{times_tuple[4]}:{times_tuple[5]}'
+    return currentTime
+
+
 while True:
     if btn.value():
         #解決按下彈跳
