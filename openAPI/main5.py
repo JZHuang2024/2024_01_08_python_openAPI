@@ -1,7 +1,8 @@
 #2024_01_24_PM02:48 下午部分將資料傳到redis並開啟RedisInsight查看資料
 
 #▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
-#此main.py必須在虛擬主機執行.指令:uvicorn main:app --reload
+#此main.py必須在虛擬主機執行source .venv/scripts/activate
+#指令:uvicorn main:app --reload
 #非按右上角 " ▷ " 執行
 #▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
 from typing import Union
