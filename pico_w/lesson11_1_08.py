@@ -74,7 +74,6 @@ while True:
                 
                 is_press = False
                 
-###########     url_str = 'https://openapi-test-ukni.onrender.com/pico_w/2024-01-22 16:02:10?address=chicken_KFC&celsius=15.386'
                 url_str = f'https://openapi-test-ukni.onrender.com/pico_w/{currentTime}?address=chicken_KFC&celsius={temperature}&light={light}'
                 try:
                     response = urequests.get(url_str)
@@ -89,7 +88,7 @@ while True:
                         print("傳送失敗(server出現錯誤)")
                     response.close()
                 
-                            
+            
         
             red_led.value(0)
 
