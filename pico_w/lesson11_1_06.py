@@ -16,6 +16,7 @@
 
 
 #修改2024.01.24.Wed.In-class.Writthen by 徐國堂
+#程式寫完丟到Thonny,樹莓派必須連上電腦
 from machine import Pin
 from tools import connect,reconnect
 import time
