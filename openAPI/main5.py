@@ -108,6 +108,7 @@ async def read_item(count:int=1):
         item = Pico_w(date=date,address=address_get,temperature=float(temperature_get),light=float(light_get))
         all_Data.append(item)
 
+    
     return all_Data
 
 #▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲2023.01.24.wed.PM04:22一次可以傳5筆資料▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
