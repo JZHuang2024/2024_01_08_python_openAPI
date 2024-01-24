@@ -154,6 +154,25 @@ async def read_item(date:str ,address:str,celsius:float,light:float):
     redis_conn.hset('pico_w:light',mapping={date:light})
     return {"狀態":"儲存成功"}
 
+
+class Pico_w(BaseModel):
+    date:str
+    address:str
+    temperature:float
+    light:float
+
+@app.get("/pico_w/")
+async def read_item(count:int=1):
+    date_list = redis_conn.lrange('pico_w:date',-count,-1)
+    dates = [date.decode() for date in date_list]
+    all_Data:[Pico_w] = []
+    for date in dates:
+        address_get = redis_conn.hget('pico_w:address',date).decode()
+        temperature_get = redis_conn.hget('pico_w:temperature',date).decode()
+        light_get = redis_conn.hget('pico_w:light',date).decode()
+        item = Pico_w(date=date,address=address_get,temperature=float(temperature_get),light=float(light_get))
+        all_Data.append(item)
+
 #▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
 #此main.py必須在虛擬主機執行.指令:uvicorn main:app --reload
 #非按右上角 " ▷ " 執行
