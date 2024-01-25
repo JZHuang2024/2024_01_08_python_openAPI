@@ -23,15 +23,15 @@ btn = Pin(14,mode=Pin.PULL_DOWN)
 is_press = False
 connect()
 
-while True:         #while 是循環結構(while一定要小寫)，while 後面搭配布林值(boolean)並用，False則終止循環，True是表示為真，while True即一直進行loop（但循环是死的）。
-    if btn.value():         #條件式&迴圈整理:if-else跟while loop不同的是，while會執行很多次，不斷地詢問，直到跳出loop，移到No區間為止，而if-else只會執行一次。
+while True:         
+    if btn.value():
         is_press = True
         red_led.value(1)
     else:
         if is_press == True:
             print('release')
             is_press = False
-            url_str = 'https://openapi-test-ukni.onrender.com/pico_w/2024-01-22 16:02:10?address=chicken_KFC&celsius=15.386'  #不能打中文改英文chicken_KFC
+            url_str = 'https://openapi-test-ukni.onrender.com/pico_w/2024-01-22 16:02:10?address=chicken_KFC&celsius=15.386'
             try:
                 response = urequests.get(url_str)            
             except:

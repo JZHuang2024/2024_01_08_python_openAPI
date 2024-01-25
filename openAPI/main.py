@@ -3,6 +3,8 @@ from fastapi import FastAPI
 import redis
 import os
 from dotenv import load_dotenv
+from pydantic import BaseModel
+
 load_dotenv()
 redis_conn = redis.Redis.from_url(os.environ.get('REDIS_HOST_PASSWORD'))
 
@@ -50,3 +52,6 @@ async def read_item(count:int=1):
         light_get = redis_conn.hget('pico_w:light',date).decode()
         item = Pico_w(date=date,address=address_get,temperature=float(temperature_get),light=float(light_get))
         all_Data.append(item)
+
+    
+    return all_Data
