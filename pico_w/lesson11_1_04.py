@@ -1,4 +1,4 @@
-#2024.01.22.Monday.In-class.Writthen by 徐國堂
+#2024_01_22_Monday_In-class.Writthen by 徐國堂
 #底下的式碼是必須在Thonny上執行樹莓派
 #       使用Thonny Python IDE編寫MicroPython程式
 #       Thonny（thonny.org）是專門為Python初學者打造的IDE（整合開發環境），
@@ -31,7 +31,7 @@ while True:         #while 是循環結構(while一定要小寫)，while 後面�
         if is_press == True:
             print('release')
             is_press = False
-            url_str = 'https://openapi-test-ukni.onrender.com/pico_w/2024-01-22 16:02:10?address=chicken_KFC&celsius=15.386'
+            url_str = 'https://openapi-test-ukni.onrender.com/pico_w/2024-01-22 16:02:10?address=chicken_KFC&celsius=15.386'  #不能打中文改英文chicken_KFC
             try:
                 response = urequests.get(url_str)            
             except:
