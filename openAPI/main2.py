@@ -45,7 +45,7 @@ async def read_item(date:str ,address:str,celsius:float,light:float):
     print(f"日期:{date}")
     print(f"位置:{address}")
     print(f"攝氏:{celsius}")
-    print(f"光線:{light}")
+    print(f"光線:{light}")    #加入光線
     return {"狀態":"儲存成功"}
 
 @app.get("/pico_w/{date}")
