@@ -47,7 +47,7 @@ st.line_chart(dataFrame,x='date',y='temperature',color='#ff0000')
 '''
 
 
-#2024_01_26_AM1145 讓資料在網頁每10秒更新一次
+#2024_01_26_AM1145 讓資料在網頁每10秒更新一次同步樹梅派 按下去 更新
 #requirements.txt 必須加入安裝 streamlit-autorefresh
 #第1次必須在終端機下的命令列執行streamlit-autorefresh安裝 指令: pip install -r requirements.txt
 #必須在終端機下的命令列執行 指令: streamlit run main.py
